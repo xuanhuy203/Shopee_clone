@@ -1,0 +1,338 @@
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url("../FONT/BeVietnamPro-ExtraLight.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    max-width: 1980px;
+    height: auto;
+    font-family: 'Be Vietnam Pro';
+}
+.container{
+    background-image: linear-gradient( #f53e2d, #ff6533);
+    height: auto;
+}
+.nav{   
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+}
+.nav__left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav__left div{
+    padding: 5px 1px;
+}
+.nav__left a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    padding: 0 10px;
+    border-left: 2px solid rgba(241, 238, 238, 0.337);
+    font-family: sans-serif;
+}
+.nav__left a:hover{
+    color: rgba(255, 255, 255, 0.611);
+}
+.nav__left .a__first-child{
+    border-left: none;
+}
+.nav__left i{
+    padding: 0 2px;
+}
+.nav__right{
+    line-height: 35px;
+}
+.nav__right ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.main-menu li{
+    position: relative;
+}
+.main-menu a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 13px;
+    padding: 0px 10px;
+}
+.main-menu i{
+    padding: 0 1px;
+}
+svg{
+    padding-top: 2px;
+}
+.main-menu .a__last-child{
+    border-left: 1px ;
+    border-left: 2px solid rgba(241, 238, 238, 0.337);
+}
+.main-menu a:hover{
+    color: rgba(255, 255, 255, 0.611);
+}
+.main-menu li .sub-menu{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    height: 75px;
+    width: 210px;
+    top: 36px;
+    right: 0;
+    padding: 10px 0;
+}
+.sub-menu li{
+    display: block;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.sub-menu li a{
+    color: rgb(49, 49, 49);
+    font-size: 14px;
+}
+.sub-menu a:hover{
+    color: #f74622;
+}
+.main-menu li:hover .sub-menu{
+    display: block;
+}
+.box{
+    height: auto;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+#logo{
+    background-image: url('../IMG/P_TRANGCHU/logo-removebg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65px;
+    width: 175%;
+    margin-right: 50px;
+    margin-bottom: 15px;
+}
+#cart{
+    background-image: url('../IMG/P_TRANGCHU/cart-removebg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 55px;
+    width: 100%;
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+.bar__search-bt{
+    display: flex;
+}
+.bar__search-bt input{
+    height: 41px;
+    width: 843px;
+    line-height: 35px;
+    padding-left: 15px;
+    border-radius: 2px;
+    border: none;
+    font-size: 14px;
+    font-weight: 200px;
+}
+.bar__search-bt button{
+    height: 34px;
+    width: 60px;
+    background-color:#fb5533;
+    border: none;
+    margin-left: -63px;
+    margin-top: 3.6px;
+    border-radius: 3px;
+}
+.bar__search-bt button i{
+    font-size: 14px;
+}
+.bar__search-bt button:hover{
+    background-color:#f67055;
+}
+.type__product{
+    display: flex;
+    align-items: center;
+}
+.type__product p{
+    font-size: 12px;
+    color: #ffffff;
+    padding: 10px 10px;
+    margin-left: -10px;
+    font-family: sans-serif;
+}
+
+/* Footer */
+.Footer{
+    background-color: rgb(245,245,245);
+}
+.info{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.info h4{
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+}
+.info p{
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 27px;
+    color: black;
+}
+.info p:hover{
+    color: #fe2f06;
+    cursor: pointer;
+}
+.pay img{
+    border-radius: 3px;
+    border: 2px solid white;
+    box-shadow: 0 1px 1px rgba(0,0,0,.2);
+    margin: 4px;
+    background-color: white;
+}
+.ship img{
+    border-radius: 3px;
+    border: 2px solid white;
+    box-shadow: 0 1px 1px rgba(0,0,0,.2);
+    margin: 4px;
+    background-color: white;
+}
+.box{
+    display: flex;
+    margin-top: 25px;
+}
+.box .box__img--big{
+    background-image: url('../IMG/footer/QR_appshopee.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 90px;
+    width: 90px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.2);
+}
+.box__img--3small img{
+    margin-top: 4px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(230, 227, 227);
+    border-radius: 3px;
+    margin-left: 10px;
+    margin-bottom: 7px;
+}
+.underline{
+    height: 1px;
+    margin: 30px auto;
+    border-top:1px solid #c6c6c6;
+    width: 1200px;
+}
+.info__detail .box1{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1200px;
+    padding-top: 15px;
+}
+.box1__left p{
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.6);
+}
+.box1__right ul{
+    display: flex;
+    list-style: none;
+}
+.box1__right ul li{
+    padding: 0 5px;
+    font-weight: 600;
+    font-size: 13px;
+    border-left: 1px solid rgba(0, 0, 0, 0.4);
+}
+.box1__right ul li:first-child{
+    border-left: none;
+}
+.box1__right li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+.box2__a{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px
+}
+.box2__a ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.box2__a li{
+    border-left:1px solid rgba(0, 0, 0, 0.2);
+    line-height: 10px;
+}
+.box2__a a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0px 25px;
+}
+.box2__a li:first-child{
+    border-left: none;
+}
+.box2__b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+.cn1{
+    background-image: url('../IMG/footer/chungnhan.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45px;
+    width: 120px;
+    margin-left: 38px;
+}
+.cn2{
+    background-image: url('../IMG/footer/chungnhan2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width:  55px;
+    margin-left: 33px;
+}
+.box2__c p{
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 10px;
+}
+.box2__d{
+    margin-top: 25px;
+}
+.box2__d p{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 10px;
+}
