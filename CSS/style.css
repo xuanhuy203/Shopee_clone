@@ -178,6 +178,7 @@ svg{
 /* Footer */
 .Footer{
     background-color: rgb(245,245,245);
+    padding-bottom: 50px;
 }
 .info{
     width: 1200px;
