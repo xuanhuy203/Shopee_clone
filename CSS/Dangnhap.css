@@ -60,7 +60,7 @@ body{
     height: 560px;
 }
 .banner{
-    background-image: url("../IMG/P_Login/banner.jpg");
+    background-image: url("../IMG/P_Login/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 560px;
@@ -246,6 +246,7 @@ body{
 /* Footer */
 .Footer{
     background-color: rgb(245,245,245);
+    padding-bottom: 50px;
 }
 .info{
     width: 1200px;
