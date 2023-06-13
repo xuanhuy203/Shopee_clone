@@ -1,3 +1,4 @@
+/* Font-main */
 @font-face {
     font-family: 'Be Vietnam Pro';
     src: url("../FONT/BeVietnamPro-ExtraLight.ttf");
@@ -14,226 +15,207 @@ body{
     height: auto;
     font-family: 'Be Vietnam Pro';
 }
-/* Header */
-.container{
-    background-image: linear-gradient( #f53e2d, #ff6533);
-    height: auto;
-    position: fixed;
-    width: 100%;
-}
-.nav{   
+.header{
     display: flex;
     justify-content: space-between;
-    width: 1200px;
     margin: 0 auto;
+    width: 1200px;
+    height: 84px;
 }
-.nav__left{
+.header__left{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 0 20px;
+}
+.logo img{
+    margin-top: -6px;
+}
+.logo img:hover{
+    cursor: pointer;
+}
+.text p{
+    align-items: center;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Be Vietnam Pro';
+}
+.header__right p{
+    line-height: 84px;
+    color:  #ee4d2d;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 5px;
+}
+.header__right p:hover{
+    cursor: pointer;
+}
+
+/* Body */
+.wrapper{
+    background-color: rgb(238, 78, 46);
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 560px;
 }
-.nav__left div{
-    padding: 5px 1px;
+.banner{
+    background-image: url("../IMG/P_Login/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 560px;
+    width: 600px;
 }
-.nav__left a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 13px;
-    padding: 0 10px;
-    border-left: 2px solid rgba(241, 238, 238, 0.337);
+.form{
+    background-color: #ffffff;
+    padding: 20px 30px;
+    height: 430px;
+    width: 402px;
+    border-radius: 5px;
+}
+.form__header p{
+    text-align: left;
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+}
+.form__header--text p{
+    text-align: center;
+    font-size: 14px;
     font-family: sans-serif;
+    font-weight: bold;
+    color:rgb(243, 194, 47);
+    padding: 10px 15px;
+    background-color: rgb(254,250,236);
+    height: 60px;
+    border: 2px solid#ffbf00;
+    margin-left: 10px;
+    line-height: 19px;
 }
-.nav__left a:hover{
-    color: rgba(255, 255, 255, 0.611);
+.form__account input{
+    height: 40px;
+    width: 340px;
+    margin-top: 35px;
+    margin-bottom: 5px;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 2px;
+    text-indent: 4px;
+    font-family: 'Be Vietnam Pro';
+    font-weight: 600;
+    opacity: 0.5;
+    color: black;
+    padding: 0 11px;
 }
-.nav__left .a__first-child{
-    border-left: none;
+.bt_login button{
+    color: white;
+    font-size: 15px;
+    background-color: rgb(238,77,45);
+    border: none;
+    border-radius: 2px;
+    height: 40px;
+    width: 340px;
+    margin-top: 25px;
+    margin-bottom: 5px;
 }
-.nav__left i{
-    padding: 0 2px;
+.bt_login button:hover{
+    cursor: pointer;
+    background-color: rgb(244, 99, 70);
 }
-.nav__right{
-    line-height: 35px;
-}
-.nav__right ul{
+.line{
+    margin-top: 25px;
     display: flex;
     align-items: center;
-    list-style: none;
 }
-.main-menu li{
-    position: relative;
-}
-.main-menu a{
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    font-family: sans-serif;
+.line span{
+    color: rgb(196, 196, 196);
     font-size: 13px;
-    padding: 0px 10px;
+    font-family: sans-serif;
+    padding: 0 15px;
 }
-.main-menu i{
-    padding: 0 1px;
+.line div{
+    border: 1px solid rgba(206, 205, 205, 0.775);;
+    width: 100%;
+    padding: 0 30px;
 }
-svg{
-    padding-top: 2px;
-}
-.main-menu .a__last-child{
-    border-left: 1px ;
-    border-left: 2px solid rgba(241, 238, 238, 0.337);
-}
-.main-menu a:hover{
-    color: rgba(255, 255, 255, 0.611);
-}
-.main-menu li .sub-menu{
-    display: none;
-    position: absolute;
-    background-color: #ffffff;
-    height: 75px;
-    width: 210px;
-    top: 36px;
-    right: 0;
-    padding: 10px 0;
-}
-.sub-menu li{
-    display: block;
-    line-height: 20px;
-    margin-bottom: 10px;
-}
-.sub-menu li a{
-    color: rgb(49, 49, 49);
-    font-size: 14px;
-}
-.sub-menu a:hover{
-    color: #f74622;
-}
-.main-menu li:hover .sub-menu{
-    display: block;
-}
-.wrapper{
-    height: auto;
-    width: 1200px;
-    margin: 0 auto;
+.bt__login--fb{
+    padding: 15px 0px;
     display: flex;
+    justify-content: space-between;
+    width: 340px;
+    margin-bottom: -15px;
+}
+.bt__login--fb button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 165px;
+    height: 40px;
+    border:1px solid #c6c6c6;
+    border-radius: 3px;
+}
+.fb{
+    background-image: url('../IMG/icon/icon_fb.jpg');
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+}
+.google{
+    background-image: url('../IMG/icon/icon_gg.jpg');
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+}
+.bt__login--fb button label{
+    font-size: 14px;
+    margin-left: 6px;
+    font-weight: 600;
+    font-family: 'Be Vietnam Pro';
+}
+.bt__login--fb button:hover{
+    background-color: #e6e5e5;
+    cursor: pointer;
+}
+.policy{
+    margin: 30px auto;
+}
+.policy p{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+}
+.policy span{
+    color: #ee4d2d;
+}
+.reg{
+    display: flex;
+    justify-content: center;
     align-items: center;
     margin-top: 10px;
 }
-#logo{
-    background-image: url('../IMG/P_TRANGCHU/logo-removebg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 65px;
-    width: 175%;
-    margin-right: 35px;
-    margin-bottom: 15px;
-}
-#cart{
-    background-image: url('../IMG/P_TRANGCHU/cart-removebg.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 55px;
-    width: 100%;
-    margin-left: 50px;
-    margin-bottom: 15px;
-}
-.bar__search-bt{
-    display: flex;
-}
-.bar__search-bt input{
-    height: 41px;
-    width: 843px;
-    line-height: 35px;
-    padding-left: 15px;
-    border-radius: 2px;
-    border: none;
+.reg #text{
+    color: rgba(0, 0, 0, 0.4);
     font-size: 14px;
-    font-weight: 200px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    padding: 0 3px;
 }
-.bar__search-bt button{
-    height: 34px;
-    width: 60px;
-    background-color:#fb5533;
-    border: none;
-    margin-left: -63px;
-    margin-top: 3.6px;
-    border-radius: 3px;
-}
-.bar__search-bt button i{
+.reg p{
     font-size: 14px;
-}
-.bar__search-bt button:hover{
-    background-color:#f67055;
-}
-.type__product{
-    display: flex;
-    align-items: center;
-    padding-top: 5px;
-}
-.type__product p{
-    font-size: 12px;
-    color: #ffffff;
-    padding: 5px 10px;
-    margin-left: -10px;
+    color: #ee4d2d;
     font-family: sans-serif;
+    font-weight: 500;
+}
+.reg p:hover{
     cursor: pointer;
 }
-/* Body */
-.content{
-    padding-top: 155px;
-    width: 1200px;
-    height: auto;
-    margin: 0 auto;
-}
-.section-bann{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    box-sizing: border-box;
-}
-.bann img{
-    height: 117px;
-    width: 400px;
-    border-radius: 2px;
-}
-.gap{
-    height: 1px;
-}
-.quickaccess{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 1200px;
-    margin: 0 auto;
-    margin-top: 15px;
-}
-.box-quickaccess{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 108px;
-}
-.box-quickaccess img{
-    height: 45px;
-    width: 45px;
-    border-radius: 5px;
-}
-.quickaccess a{
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    font-size: 13px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    color: black;
-    text-decoration: none;
-}
-.box-quickaccess:hover{
-    padding-bottom: 2px;
-}
+
 /* Footer */
 .Footer{
-    background-color:  rgb(251,251,251);
+    background-color: rgb(245,245,245);
     padding-bottom: 50px;
 }
 .info{
@@ -397,3 +379,4 @@ svg{
     color: rgba(0, 0, 0, 0.6);
     margin-top: 10px;
 }
+
