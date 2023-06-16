@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Be Vietnam Pro';
-    src: url("../FONT/BeVietnamPro-ExtraLight.ttf");
+    src: url("../font/BeVietnamPro-ExtraLight.ttf");
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 *{
@@ -20,6 +20,7 @@ body{
     height: auto;
     position: fixed;
     width: 100%;
+    z-index: 10;
 }
 .nav{   
     display: flex;
@@ -183,17 +184,65 @@ svg{
     height: auto;
     margin: 0 auto;
 }
-.section-bann{
+.section__slideshow--bann{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
     box-sizing: border-box;
+    gap: 3px;
+    height: 235px;
+    width: 1200px;
+}
+.section__slideshow--container{
+    height: 235px;
+    width: 800px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 2px;
+    border-radius: 3px;
+}
+.section__slideshow--container .slide
+{
+    height: 235px;
+    width: 800px;
+    transform: translateX(50%);
+    z-index: 0;
+    animation: slide 32s 5s ease infinite; 
+    animation-iteration-count: infinite;
+}
+.slide img{
+    height: 235px;
+    width: 800px;
+}
+@keyframes slide {
+    0%{
+        transform: translateX(400%);
+    }
+    25%{
+        transform: translateX(300%);
+    }
+    50%{
+        transform: translateX(200%);
+    }
+    75%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+.bann{
+    height: 235px;
+    width: 400px;
 }
 .bann img{
-    height: 117px;
-    width: 400px;
+    height: 115px;
+    width: 100%;
     border-radius: 2px;
+    box-sizing: border-box;
 }
 .gap{
     height: 1px;
